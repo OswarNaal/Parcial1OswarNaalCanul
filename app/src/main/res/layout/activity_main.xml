@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="40mm"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/dame_numero_1"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="40mm"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num1"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/dame_numero_2"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num2"
+        android:layout_marginBottom="60dp"
+        android:text="@string/resultado"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/suma"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/result"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:onClick="onClick"
+        android:text="@string/sumar"
+        android:backgroundTint="@color/ver"
+        />
+
+    <Button
+        android:id="@+id/resta"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/result"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:onClick="onClick"
+        android:text="@string/restar"
+        android:backgroundTint="@color/ver"
+        />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/suma"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:onClick="onClick"
+        android:text="@string/multiplicar"
+        android:backgroundTint="@color/ver"/>
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/resta"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:onClick="onClick"
+        android:text="@string/dividir"
+        android:backgroundTint="@color/ver"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/logo1"/>
+</RelativeLayout>
+
